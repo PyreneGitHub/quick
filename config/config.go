@@ -13,7 +13,7 @@ var (
 	Log         *log.Logger
 	M           *Manager
 	Srv         *S //这里保存service的所有的配置
-	ManagerChan  chan string
+	ManagerChan  chan interface{}
 	ServiceChan chan string
 	DeleteChan  chan string
 	InsertChan   chan string
